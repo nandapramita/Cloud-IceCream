@@ -35,8 +35,8 @@ Proyek ini memiliki struktur sebagai berikut:
   2. Kemudian ketikkan tautan hidup di atas dan web page siap ditampilkan.
 
 #Screenshot Halaman Web Cloud Ice Cream
-![Screenshot Home](URL_GAMBAR)
-![Screenshot About Us](URL_GAMBAR)
-![Screenshot Latest Products](URL_GAMBAR)
-![Screenshot Review](URL_GAMBAR)
-![Screenshot Footer](URL_GAMBAR)
+![Screenshot Home](https://github.com/nandapramita/uts-webpro/blob/main/Ssutswebpro/ss01.png)
+![Screenshot About Us](https://github.com/nandapramita/uts-webpro/blob/main/Ssutswebpro/ss02.png)
+![Screenshot Latest Products](https://github.com/nandapramita/uts-webpro/blob/main/Ssutswebpro/ss03.png)
+![Screenshot Review](https://github.com/nandapramita/uts-webpro/blob/main/Ssutswebpro/ss04.png)
+![Screenshot Footer](https://github.com/nandapramita/uts-webpro/blob/main/Ssutswebpro/ss05.png)
