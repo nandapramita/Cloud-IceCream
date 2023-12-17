@@ -44,9 +44,9 @@ Proyek ini memiliki struktur sebagai berikut:
 #Tautan Hidup
 - https://nandapramita.github.io/uts-webpro/
 - Cara Menjalankan Proyek
-  1. Buka browser yang tersedia, disarankan chrome atau google edge;
-  2. Kemudian ketikkan tautan hidup di atas dan web page siap ditampilkan;
-  3. Atau langsung klik tautan hidup yang sudah tertera.
+  1. Klik tautan hidup yang sudah tertera.
+  2. Atau buka browser yang tersedia, disarankan chrome atau google edge,
+  3. Kemudian ketikkan tautan hidup di atas dan web page siap ditampilkan.
 
 #Screenshot Halaman Web Cloud Ice Cream
 ![Screenshot Home](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss01.png)
