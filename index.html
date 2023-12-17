@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Cloud Ice Cream</title>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <a href="#" class="logo">Feel The Clouds<span>.</span></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#review">Review</a>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div>
+        </header>
+
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Cloud Ice Cream</h3>
+                <span>Soft and Light Ice Cream</span>
+                <p>Rasakan kelezatan seperti melayang di atas awan dengan setiap gigitan es krim lembut kami. Dengan tekstur yang 
+                menggoda dan rasa yang memikat, es krim kami mengajak Anda dalam perjalanan manis yang tak terlupakan. Nikmati 
+                varian rasa yang cerah dan memanjakan lidah Anda.</p>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"> About <span>us</span></h1>
+            <div class="row">
+                <div class="video-container">
+                    <video src="ice2.mp4" loop autoplay muted ></video>
+                </div>
+                <div class="content">
+                    <h3>Why Choose Us?</h3>
+                    <p>Selamat datang di Cloud Ice Cream, tempat di mana kelezatan dan kreasi bertemu dalam sebuah gigitan. 
+                    Kami adalah pionir dalam dunia es krim, dengan misi untuk memberikan pengalaman rasa yang tak tertandingi 
+                    kepada pelanggan setia kami.</p>
+                    <p>Sejak berdiri, kami telah memadukan seni es krim tradisional dengan inovasi modern, menghasilkan produk 
+                    yang tak hanya memuaskan lidah, tetapi juga menciptakan kenangan manis yang abadi. Di balik setiap sendok es 
+                    krim kami, terdapat dedikasi tinggi terhadap kualitas bahan baku terbaik dan proses produksi yang teliti.</p>
+                    <p>Kami bangga menjadi bagian dari setiap momen berharga Anda, dari perayaan hingga pertemuan santai. Dengan 
+                    staf yang bersemangat dan ramah, kami berkomitmen untuk memberikan layanan pelanggan terbaik dan menciptakan 
+                    lingkungan yang hangat. Selamat datang di Cloud Ice Cream - di sini, kami tidak hanya menjual es krim; kami 
+                    memberikan pengalaman rasa yang luar biasa.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+        <h1 class="heading"> Latest <span>products</span></h1>
+            <div class="mainbox">
+            <button onclick="checkIceCreamPrice()">Check Price</button>
+            <input type="text" id="iceCreamName" placeholder="Input Ice Cream Name">
+            </div>
+            <p id="priceDisplay"></p>
+
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="ice-a.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Sorbet</h3>
+                        <div class="price"> $12.99 <span>$15.99</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-5%</span>
+                    <div class="image">
+                        <img src="ice-b.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Frozen</h3>
+                        <div class="price"> $13.99 <span>$14.99</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-15%</span>
+                    <div class="image">
+                        <img src="ice-c.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Highpro</h3>
+                        <div class="price"> $13.99 <span>$16.99</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-12%</span>
+                    <div class="image">
+                        <img src="ice-d.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Yogurt</h3>
+                        <div class="price"> $11.99 <span>$13.99</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-20%</span>
+                    <div class="image">
+                        <img src="ice-e.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Gelato</h3>
+                        <div class="price"> $15.99 <span>$16.99</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="ice-f.png" width="300" height="300" class="rounded-image" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">add to cart</a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Regular</h3>
+                        <div class="price"> $10.99 <span>$12.99</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review" id="review">
+            <h1 class="heading"> Customer's <span>review</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Saya sangat senang dengan pengalaman berbelanja di Cloud Ice Cream. Es krim mereka benar-benar luar biasa! 
+                    Rasanya sangat autentik dan lembut, dan variasi rasa yang mereka tawarkan membuat saya ingin mencoba semuanya. 
+                    Staf di sini sangat ramah dan membantu, memberikan rekomendasi yang tepat sesuai dengan selera saya.</p>
+                    <div class="user">
+                        <img src="ice01.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Calvin Leosa</h3>
+                            <span>happy customer</span>
+                        </div>
+                    </div><span class="fas fa-quote-right"></span></div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Sebagai penggemar berat es krim, saya telah mencoba banyak tempat, dan Cloud Ice Cream dengan mudah menjadi 
+                    favorit saya. Es krim mereka benar-benar premium dengan rasa yang khas dan tekstur yang sempurna. Saya sangat 
+                    menghargai komitmen mereka terhadap bahan-bahan berkualitas tinggi. Selain itu, layanan pelanggan mereka luar biasa.</p>
+                    <div class="user">
+                        <img src="ice02.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Sofia Turner</h3>
+                            <span>happy customer</span>
+                        </div>
+                    </div><span class="fas fa-quote-right"></span></div>
+            </div>
+            </section>
+
+            <section class="feedback">
+                <h1 class="heading"> What do you think <span>about the ice cream?</span></h1>
+                <div class="box-container">
+                    <div class="box">
+                        <label for="taste">1. Rasanya:</label>
+                        <select id="taste">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="texture">2. Teksturnya:</label>
+                        <select id="texture">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="presentation">3. Presentasinya:</label>
+                        <select id="presentation">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="overall">4. Secara keseluruhan:</label>
+                        <select id="overall">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button onclick="calculateTotal()">Submit Review</button>
+                    <p id="totalRating"></p>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Products</a>
+                        <a href="#">Review</a>
+                    </div>
+                    <div class="box">
+                        <h3>Extra Links</h3>
+                        <a href="#">My Account</a>
+                        <a href="#">My Order</a>
+                        <a href="#">My Favorite</a>
+                    </div>
+                    <div class="box">
+                        <h3>Location</h3>
+                        <a href="#">Indonesia</a>
+                        <a href="#">Singapore</a>
+                        <a href="#">Canada</a>
+                        <a href="#">Australia</a>
+                    </div>
+                    <div class="box">
+                        <h3>Contact Info</h3>
+                        <a href="#">+987-654-321</a>
+                        <a href="#">cloudicecream@gmail.com</a>
+                        <a href="#">Bali, Indonesia - 13446</a>
+                    </div>
+                </div>
+                <div class="credit">Created by <span>Nanda Pramita </span> | All rights reserved</div>
+            </section>
+    </body>
+</html>
