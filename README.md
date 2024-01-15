@@ -24,21 +24,15 @@ d) Informasi yang Mudah Diakses: Informasi penting, seperti menu, harga, diskon,
 -
 Proyek pengembangan web ini terbagi menjadi tiga bagian utama: header, konten dan footer. Kemudian terdapat pula halaman login dan signup serta halaman untuk Admin (Admin Dashboard). Seluruh web dirancang dengan menggunakan HTML, CSS, JavaScript,dan PHP. Adapun lebih rinci sebagai berikut;
 
-a) Halaman Utama ("Home"): Pengguna dapat merasakan kesan awan yang lembut melalui desain tampilan utama.
-Informasi singkat tentang Cloud Ice Cream dan daya tarik produk mereka disajikan pada halaman ini.
+a) Halaman Utama ("Home"): Pengguna dapat merasakan kesan awan yang lembut melalui desain tampilan utama. Informasi singkat tentang Cloud Ice Cream dan daya tarik produk mereka disajikan pada halaman ini.
 
-b) Tentang Kami ("About Us"): Pengguna dapat mengenal lebih dekat dengan perusahaan melalui halaman "About Us".
-Desain halaman ini mengusung suasana yang menyenangkan dan informatif.
+b) Tentang Kami ("About Us"): Pengguna dapat mengenal lebih dekat dengan perusahaan melalui halaman "About Us". Desain halaman ini mengusung suasana yang menyenangkan dan informatif.
 
-c) Daftar Menu ("Latest Products"): Daftar menu es krim beserta harganya dapat ditemukan dengan mudah.
-Fitur pencarian sudah tersedia guna memudahkan pengguna untuk menemukan menu yang diinginkan.
+c) Daftar Menu ("Latest Products"): Daftar menu es krim beserta harganya dapat ditemukan dengan mudah. Fitur pencarian sudah tersedia guna memudahkan pengguna untuk menemukan menu yang diinginkan.
 
-d) Ulasan Pelanggan ("Review"): Pengguna dapat membaca ulasan dari pelanggan Cloud Ice Cream dan memberikan feedback mereka.
-Halaman ini membangun kepercayaan melalui pengalaman positif pelanggan sebelumnya.
+d) Ulasan Pelanggan ("Review"): Pengguna dapat membaca ulasan dari pelanggan Cloud Ice Cream dan memberikan feedback mereka. Halaman ini membangun kepercayaan melalui pengalaman positif pelanggan sebelumnya.
 
-e) Halaman Login & Signup: Pengguna yang belum memiliki akun dapat mendaftar dengan mengisi formulir pendaftaran.
-Informasi yang diperlukan mencakup nama, alamat email, dan kata sandi.Sementara bagi pengguna yang sudah memiliki akun dapat masuk ke platform dengan menggunakan kombinasi alamat email dan kata sandi.
-Sistem autentikasi yang aman dan terenkripsi digunakan untuk melindungi informasi pengguna.
+e) Halaman Login & Signup: Pengguna yang belum memiliki akun dapat mendaftar dengan mengisi formulir pendaftaran. Informasi yang diperlukan mencakup nama, alamat email, dan kata sandi.Sementara bagi pengguna yang sudah memiliki akun dapat masuk ke platform dengan menggunakan kombinasi alamat email dan kata sandi. Sistem autentikasi yang aman dan terenkripsi digunakan untuk melindungi informasi pengguna.
 
 f) Halaman Pemesanan: Pengguna dapat melakukan pemesanan produk Cloud Ice Cream melalui halaman ini apabila telah melakukan login, tahapan tersebut diharuskan untuk membantu sistem mendapatkan informasi pribadi pengguna tanpa harus menuliskannya kembali di form (menghindari redudansi).
 
@@ -47,11 +41,16 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
 -- Struktur Folder --
 -
 - Website Cloud Ice Cream memiliki struktur folder sebagai berikut;
+  
 /cloud-icecream
 ├── /Main                      : Folder Utama
+
     ├── /pic                   : Folder menangani gambar-gambar
+    
         ├── cloud.png          : Gambar ikon di title
+        
         ├── ice-a.png          : Gambar ice cream sorbet
+        
         ├── ice-b.png          : Gambar ice cream frozen
         ├── ice-c.png          : Gambar ice cream highpro
         ├── ice-d.png          : Gambar ice cream yogurt
