@@ -9,7 +9,6 @@ Repository Cloud-IceCream dibuat sebagai bagian dari persiapan Ujian Akhir Semes
 Cloud Ice Cream adalah perusahaan yang menghadirkan es krim berkualitas tinggi dalam setiap menu mereka. Keistimewaan dari es krim mereka terletak pada tampilan awan yang ringan, lembut, dan menyegarkan. Website ini dibuat untuk mencerminkan identitas Cloud Ice Cream, dengan desain yang mengusung warna biru langit muda dan tampilan yang ceria.
 
 -- Harapan pengalaman pengguna --
--
 Website Cloud Ice Cream dirancang dengan berbagai fitur untuk memberikan pengalaman pengguna yang memuaskan dan menyenangkan. Beberapa harapan pengalaman pengguna yang diintegrasikan dalam desain website ini meliputi:
 a) Navigasi Intuitif: Dengan header yang jelas dan menu yang terstruktur, diharapkan pengguna dapat dengan mudah menavigasi antara halaman-halaman utama.
 Fitur pencarian pada halaman "Latest Products" dirancang untuk membantu pengguna menemukan menu yang diinginkan dengan cepat.
