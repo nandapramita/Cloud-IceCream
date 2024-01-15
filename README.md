@@ -45,13 +45,9 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
 /cloud-icecream
 
 ├── /Main                      : Folder Utama
-
     ├── /pic                   : Folder menangani gambar-gambar
-    
         ├── cloud.png          : Gambar ikon di title
-        
         ├── ice-a.png          : Gambar ice cream sorbet
-        
         ├── ice-b.png          : Gambar ice cream frozen
         ├── ice-c.png          : Gambar ice cream highpro
         ├── ice-d.png          : Gambar ice cream yogurt
