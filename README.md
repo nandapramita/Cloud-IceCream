@@ -76,7 +76,9 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
     ├── form_handler.php       : File menangani method
     ├── pesanan.php            : File utama pesanan
     ├── process.php            : File menangani respon method
+    
 ├── /User                      : Folder menangani kepentingan User
+
     ├── /css                   : Folder menangani css login.php dan signup.php
         ├── style.css          : File menangani css login.php dan signup.php
         ├── store.png          : Gambar background login.php dan signup.php
@@ -89,7 +91,9 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
     ├── process.php            : File menangani proses login dan logout
     ├── signup.php             : File utama signup
     ├── signup_formhandler.php : File menangani method
+    
 ├── /Admin                     : Folder menangani proses manajemen oleh Admin
+
     ├── /admin                     : File menangani proses login dan logout Admin
         ├── /css                   : Folder menangani css login.php dan signup.php Admin
             ├── style.css          : File menangani css login.php dan signup.php Admin
@@ -113,9 +117,13 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
     ├── product.php            : File menangani utama product (admin)
     ├── user.php               : File menangani utama user (user)
     ├── welcome.php            : File menangani tampilan default
+    
 ├── /Designsystem              : Folder menangani proses sistem design
+
     ├── systemdesign.pdf       : File menangani desain sistem
+    
 ├── /Screenshotsystem          : Folder menangani tangkapan layar sistem
+
     ├── ss01.png               : Gambar home
     ├── ss02.png               : Gambar about
     ├── ss03.png               : Gambar product
