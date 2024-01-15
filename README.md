@@ -4,9 +4,11 @@ Repository ini disusun oleh Putu Putri Nanda Pramita, seorang mahasiswi jurusan 
 
 Repository Cloud-IceCream dibuat sebagai bagian dari persiapan Ujian Akhir Semester (UAS) ganjil 2024 untuk mata kuliah Pemrograman Web.
 
+
 -- Deskripsi Proyek --
 -
 Cloud Ice Cream adalah perusahaan yang menghadirkan es krim berkualitas tinggi dalam setiap menu mereka. Keistimewaan dari es krim mereka terletak pada tampilan awan yang ringan, lembut, dan menyegarkan. Website ini dibuat untuk mencerminkan identitas Cloud Ice Cream, dengan desain yang mengusung warna biru langit muda dan tampilan yang ceria.
+
 
 -- Harapan pengalaman pengguna --
 -
@@ -19,6 +21,7 @@ b) Tampilan Visual Menarik: Desain cerah, ceria, dan ringan diharapkan memberika
 c) Responsif dan Cepat: Website ini dirancang responsif untuk memastikan pengalaman pengguna yang konsisten, baik pada perangkat desktop maupun mobile. Kecepatan loading halaman dioptimalkan untuk menjaga kenyamanan pengguna selama berinteraksi dengan situs.
 
 d) Informasi yang Mudah Diakses: Informasi penting, seperti menu, harga, diskon, dan ulasan pelanggan, disajikan dengan cara yang mudah dipahami. Halaman "About Us" memberikan wawasan lebih dalam tentang visi dan misi Cloud Ice Cream.
+
 
 -- Fitur Utama --
 -
@@ -37,6 +40,7 @@ e) Halaman Login & Signup: Pengguna yang belum memiliki akun dapat mendaftar den
 f) Halaman Pemesanan: Pengguna dapat melakukan pemesanan produk Cloud Ice Cream melalui halaman ini apabila telah melakukan login, tahapan tersebut diharuskan untuk membantu sistem mendapatkan informasi pribadi pengguna tanpa harus menuliskannya kembali di form (menghindari redudansi).
 
 g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin dalam memanajemen pesanan yang masuk dari pengguna, memanajemen produk seperti pembaruan harga dan stok, dan mengetahui informasi User. Admin diharuskan login terlebih dahulu agar dapat menggunakan halaman ini. 
+
 
 -- Struktur Folder --
 -
@@ -137,6 +141,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
     ├── ss11.png               : Gambar product (admin)
     ├── ss12.png               : Gambar pesanan (admin)
 
+
 -- Tautan Hidup --
 -
 Tautan Proyek
@@ -144,6 +149,7 @@ Cara Menjalankan Proyek:
 Klik tautan proyek yang telah disediakan.
 Atau buka browser, disarankan menggunakan Chrome atau Microsoft Edge.
 Ketikkan tautan proyek di atas, dan halaman web siap ditampilkan.
+
 
 -- Screenshot Halaman Web Cloud Ice Cream --
 -
