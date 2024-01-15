@@ -45,6 +45,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
 /cloud-icecream
 
 ├── /Main                      : Folder Utama
+
     ├── /pic                   : Folder menangani gambar-gambar
         ├── cloud.png          : Gambar ikon di title
         ├── ice-a.png          : Gambar ice cream sorbet
@@ -62,7 +63,9 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
         ├── index.html         : File utama web Cloud Ice Cream
         ├── script.js          : File menangani pencarian dan perhitungan
         ├── style.css          : File menangani css main
+        
 ├── /Pesanan                   : Folder menangani proses pemesanan
+
     ├── /css                   : Folder menangani css pesanan.php
         ├── style.css          : File menangani css pesanan
         ├── store.png          : Gambar background pesanan
