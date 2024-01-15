@@ -9,15 +9,16 @@ Repository Cloud-IceCream dibuat sebagai bagian dari persiapan Ujian Akhir Semes
 Cloud Ice Cream adalah perusahaan yang menghadirkan es krim berkualitas tinggi dalam setiap menu mereka. Keistimewaan dari es krim mereka terletak pada tampilan awan yang ringan, lembut, dan menyegarkan. Website ini dibuat untuk mencerminkan identitas Cloud Ice Cream, dengan desain yang mengusung warna biru langit muda dan tampilan yang ceria.
 
 -- Harapan pengalaman pengguna --
+-
 Website Cloud Ice Cream dirancang dengan berbagai fitur untuk memberikan pengalaman pengguna yang memuaskan dan menyenangkan. Beberapa harapan pengalaman pengguna yang diintegrasikan dalam desain website ini meliputi:
-a) Navigasi Intuitif: Dengan header yang jelas dan menu yang terstruktur, diharapkan pengguna dapat dengan mudah menavigasi antara halaman-halaman utama.
-Fitur pencarian pada halaman "Latest Products" dirancang untuk membantu pengguna menemukan menu yang diinginkan dengan cepat.
-b) Tampilan Visual Menarik: Desain cerah, ceria, dan ringan diharapkan memberikan kesan positif kepada pengguna.
-Pengguna dapat menikmati tampilan awan yang ringan dan gambar produk yang menggugah selera.
-c) Responsif dan Cepat: Website ini dirancang responsif untuk memastikan pengalaman pengguna yang konsisten, baik pada perangkat desktop maupun mobile.
-Kecepatan loading halaman dioptimalkan untuk menjaga kenyamanan pengguna selama berinteraksi dengan situs.
-d) Informasi yang Mudah Diakses: Informasi penting, seperti menu, harga, diskon, dan ulasan pelanggan, disajikan dengan cara yang mudah dipahami.
-Halaman "About Us" memberikan wawasan lebih dalam tentang visi dan misi Cloud Ice Cream.
+
+a) Navigasi Intuitif: Dengan header yang jelas dan menu yang terstruktur, diharapkan pengguna dapat dengan mudah menavigasi antara halaman-halaman utama. Fitur pencarian pada halaman "Latest Products" dirancang untuk membantu pengguna menemukan menu yang diinginkan dengan cepat.
+
+b) Tampilan Visual Menarik: Desain cerah, ceria, dan ringan diharapkan memberikan kesan positif kepada pengguna. Pengguna dapat menikmati tampilan awan yang ringan dan gambar produk yang menggugah selera.
+
+c) Responsif dan Cepat: Website ini dirancang responsif untuk memastikan pengalaman pengguna yang konsisten, baik pada perangkat desktop maupun mobile. Kecepatan loading halaman dioptimalkan untuk menjaga kenyamanan pengguna selama berinteraksi dengan situs.
+
+d) Informasi yang Mudah Diakses: Informasi penting, seperti menu, harga, diskon, dan ulasan pelanggan, disajikan dengan cara yang mudah dipahami. Halaman "About Us" memberikan wawasan lebih dalam tentang visi dan misi Cloud Ice Cream.
 
 -- Fitur Utama --
 -
