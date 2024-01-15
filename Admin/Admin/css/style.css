@@ -1,0 +1,118 @@
+:root{
+    --c1: #190482;
+    --c2: #7752FE;
+    --c3: #8E8FFA;
+    --c4: #C2D9FF;
+    --c0: #fff;
+    --f1: 'Helvetica Neue';}
+
+    *{
+        margin:0; padding:0;
+        box-sizing: border-box;
+        font-family: var(--f1);
+        outline: none; border: none;
+        text-decoration: none;
+        transition: .2s linear;}
+    
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden;}
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin-top: 0;
+        padding: 0.5%;
+        background-color: rgba(0,0,0,.005);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; 
+    }
+    
+    header{
+        position: fixed;
+        top:0; left:0; right:0;
+        background: var(--c0);
+        padding: 2rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);}
+
+    form {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 50px 50px;
+        font-size: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+    }
+    
+    header .logo{
+        font-size: 2.6rem;
+        color: var(--c1);
+        font-weight: bolder;}
+    
+    header .logo span{
+        color: var(--c4);}
+    
+        
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-size: 15px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 8px;
+        font-size: 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border-color: var(--c4);
+        background-color: var(--c4);
+    }
+    
+    
+    input[type="submit"] {
+        background-color: var(--c1);
+        border-color: var(--c1);
+        color: var(--c0);
+        cursor: pointer;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: var(--c3);
+        border-color: var(--c3);
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--c1);
+        margin-bottom: 25px;
+    }
+    
+    p a {
+        text-decoration: none;
+        color: var(--c2);
+    }
+    
+    p a:hover {
+        text-decoration: underline;
+    }
+
+    header a:hover {
+    text-decoration: none;
+    }
+
+    p{
+        color: var(--c1);
+        padding-left: 22%;
+    }
