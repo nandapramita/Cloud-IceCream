@@ -43,6 +43,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
 - Website Cloud Ice Cream memiliki struktur folder sebagai berikut;
   
 /cloud-icecream
+
 ├── /Main                      : Folder Utama
 
     ├── /pic                   : Folder menangani gambar-gambar
