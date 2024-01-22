@@ -1,6 +1,6 @@
-<!-- pesanan.php -->
 <?php
-include 'dbconfig.php';
+include 'process.php';
+
 session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -10,33 +10,32 @@ if (!isset($_SESSION['username'])) {
 
 $idProduct = $_GET['idProduct'];
 
-$query = "SELECT nama, harga FROM product WHERE idProduct = $idProduct";
-$result = $pdo->query($query);
+$database = new Database("localhost", "cloud", "root", "");
+$pdo = $database->getPDO();
 
-if ($result->rowCount() > 0) {
-    $row = $result->fetch(PDO::FETCH_ASSOC);
-    $namaProduk = $row['nama'];
-    $hargaProduk = $row['harga'];
-} else {
-    // Handle jika idProduct tidak ditemukan
+$pesanan = new Pesanan($pdo);
+
+$produkInfo = $pesanan->getProdukInfo($idProduct);
+
+if (!$produkInfo) {
     echo "Produk tidak ditemukan.";
     exit();
 }
 
-//Ambil informasi pengguna dari database berdasarkan sesi login
-$username = $_SESSION['username'];
-$queryUser = "SELECT username, email FROM user WHERE username = '$username'";
-$resultUser = $pdo->query($queryUser);
+$namaProduk = $produkInfo['nama'];
+$hargaProduk = $produkInfo['harga'];
 
-if ($resultUser->rowCount() > 0) {
-    $rowUser = $resultUser->fetch(PDO::FETCH_ASSOC);
-    $namaUser = $rowUser['username'];
-    $emailUser = $rowUser['email'];
-} else {
-    // Handle jika informasi pengguna tidak ditemukan
+// Ambil informasi pengguna dari database berdasarkan sesi login
+$username = $_SESSION['username'];
+$userInfo = $pesanan->getUserInfo($username);
+
+if (!$userInfo) {
     echo "Informasi pengguna tidak ditemukan.";
     exit();
 }
+
+$namaUser = $userInfo['username'];
+$emailUser = $userInfo['email'];
 ?>
 
 <!DOCTYPE html>
@@ -49,17 +48,17 @@ if ($resultUser->rowCount() > 0) {
     <link rel="icon" type="image/x-icon" href="css/cloud.png">
 </head>
 <body>
-<header>
-    <a href="#" class="logo">Feel The Clouds<span>.</span></a>
-</header>
+    <header>
+        <a href="#" class="logo">Feel The Clouds<span>.</span></a>
+    </header>
 
     <form action="form_handler.php" method="post">
-    <h1>Formulir Pesanan <br> Ice Cream <?php echo $namaProduk; ?></h1>
+        <h1>Formulir Pesanan <br> Ice Cream <?php echo $namaProduk; ?></h1>
         <div class="luv">
             <p>Nama Produk: <?php echo $namaProduk; ?></p>
             <p>Harga Produk: $<?php echo number_format($hargaProduk, 2); ?></p>
-            <p>Nama Pengguna: <?php echo $namaUser; ?></p>
-            <p>Email Pengguna: <?php echo $emailUser; ?></p>
+            <p>Nama Anda: <?php echo $namaUser; ?></p>
+            <p>Email Anda: <?php echo $emailUser; ?></p>
         </div>
         
         <input type="hidden" name="idProduct" value="<?php echo $idProduct; ?>">
@@ -68,7 +67,7 @@ if ($resultUser->rowCount() > 0) {
         <label for="address">Alamat Pengiriman:</label>
         <input type="text" name="address" id="address" required>
 
-        <input type="submit" value="Pesan Sekarang">
+        <input type="submit" value="Konfirmasi Pesanan">
     </form>
 </body>
 </html>

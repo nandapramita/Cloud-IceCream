@@ -77,7 +77,7 @@ session_start();?>
                         <img src="../pic/ice-a.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(1)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(1)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ session_start();?>
                         <img src="../pic/ice-b.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(2)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(2)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ session_start();?>
                         <img src="../pic/ice-c.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(3)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(3)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ session_start();?>
                         <img src="../pic/ice-d.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(4)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(4)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -133,7 +133,7 @@ session_start();?>
                         <img src="../pic/ice-e.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(5)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(5)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ session_start();?>
                         <img src="../pic/ice-f.png" width="300" height="300" class="rounded-image" alt="">
                         <div class="icons">
                             <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn" onclick="buyNow(6)">buy now</a>
+                            <a href="#" class="cart-btn" onclick="viewDetail(6)">View Detail</a>
                             <a href="#" class="fas fa-share"></a>
                         </div>
                     </div>
@@ -160,8 +160,8 @@ session_start();?>
         </section>
 
         <script>
-            function buyNow(idProduct) {
-                window.location.href = `../../Pesanan/pesanan.php?idProduct=${idProduct}`;
+            function viewDetail(idProduct) {
+                window.location.href = `../../Product/detail.php?idProduct=${idProduct}`;
             }
         </script>
 

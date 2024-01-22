@@ -1,6 +1,5 @@
-<!-- form_handler.php -->
 <?php
-include 'dbconfig.php';
+include 'process.php';
 
 // Cek apakah data dikirim dari formulir pesanan.php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -12,35 +11,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ambil informasi pengguna dari sesi login
     session_start();
     $username = $_SESSION['username'];
-    $queryUser = "SELECT username, email FROM user WHERE username = '$username'";
-    $resultUser = $pdo->query($queryUser);
 
-    if ($resultUser->rowCount() > 0) {
-        $rowUser = $resultUser->fetch(PDO::FETCH_ASSOC);
-        $namaUser = $rowUser['username'];
-        $emailUser = $rowUser['email'];
-    } else {
-        // Handle jika informasi pengguna tidak ditemukan
-        echo "Informasi pengguna tidak ditemukan.";
-        exit();
-    }
+    $database = new Database("localhost", "cloud", "root", "");
+    $pdo = $database->getPDO();
+
+    $pesanan = new Pesanan($pdo);
 
     // Simpan pesanan ke database
-    $queryInsert = "INSERT INTO pesanan (idUser, idProduct, address, total) VALUES (
-        (SELECT idUser FROM user WHERE username = '$username'),
-        :idProduct,
-        :address,
-        :hargaProduk
-    )";
-
-    $stmt = $pdo->prepare($queryInsert);
-    $stmt->bindParam(':idProduct', $idProduct);
-    $stmt->bindParam(':address', $address);
-    $stmt->bindParam(':hargaProduk', $hargaProduk);
-    
-    if ($stmt->execute()) {
+    if ($pesanan->saveOrder($idProduct, $username, $address, $hargaProduk)) {
         // Pesanan berhasil disimpan
-        echo "Pesanan berhasil disimpan.";
+        header("Location: ty.php");
+        exit(); // Pastikan untuk keluar setelah header redirect
     } else {
         // Pesanan gagal disimpan
         echo "Gagal menyimpan pesanan.";

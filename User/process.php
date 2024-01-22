@@ -1,39 +1,39 @@
 <?php
-require_once 'dbconfig.php';
-class User
-{
-	private $pdo;
+require_once 'database.php';
 
-	public function __construct($pdo)
-	{
-		$this->pdo = $pdo;
-	}
+class Process {
+    private $pdo;
 
-	//method for user registration
-	public function registerUser($username, $password, $email)
-	{
-		$stmt = $this->pdo->prepare("INSERT INTO user (username, password, email) VALUES (:username, :password, :email)");
-		$stmt->execute([
-			'username'=> $username,
-			'password'=> $password,
-			'email'=> $email
-		]);
-	}
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+    }
 
-	//method for user authentication
-	public function authenticate($username, $password)
-	{
-		$stmt = $this->pdo->prepare("SELECT * FROM user WHERE username = :username AND password = :password");
-		$stmt->execute(['username' => $username, 'password' => $password]);
-		$user = $stmt->fetch();
+    // Method untuk registrasi pengguna
+    public function registerUser($username, $password, $email) {
+        $stmt = $this->pdo->prepare("INSERT INTO user (username, password, email) VALUES (:username, :password, :email)");
+        $stmt->execute([
+            'username' => $username,
+            'password' => $password,
+            'email' => $email
+        ]);
+    }
 
-		if ($user)
-		{
-			return $user;
-		} 
-		else 
-		{
-			return false;
-		}
-	}
+    // Method untuk otentikasi pengguna
+    public function authenticate($username, $password) {
+        $stmt = $this->pdo->prepare("SELECT * FROM user WHERE username = :username AND password = :password");
+        $stmt->execute(['username' => $username, 'password' => $password]);
+        $user = $stmt->fetch();
+
+        if ($user) {
+            return $user;
+        } else {
+            return false;
+        }
+    }
 }
+
+$database = new Database("localhost", "cloud", "root", "");
+$pdo = $database->getPDO();
+
+$process = new Process($pdo);
+?>

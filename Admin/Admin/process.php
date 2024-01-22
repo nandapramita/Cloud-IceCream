@@ -1,40 +1,39 @@
 <?php
-require_once 'dbconfig.php';
+require_once 'database.php';
 
-class Admin
-{
+class Process {
     private $pdo;
 
-    public function __construct($pdo)
-    {
+    public function __construct($pdo) {
         $this->pdo = $pdo;
     }
 
-    // method for user registration
-    public function registerUser($username, $password, $email)
-    {
-        // Hash password before storing it in the database
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
-        $stmt = $this->pdo->prepare("INSERT INTO Admin (username, password, email) VALUES (:username, :password, :email)");
+    // Method untuk registrasi pengguna
+    public function registerUser($username, $password, $email) {
+        $stmt = $this->pdo->prepare("INSERT INTO admin (username, password, email) VALUES (:username, :password, :email)");
         $stmt->execute([
             'username' => $username,
-            'password' => $hashedPassword,
+            'password' => $password,
             'email' => $email
         ]);
     }
 
-    // method for user authentication
-    public function authenticate($username, $password)
-    {
-        $stmt = $this->pdo->prepare("SELECT * FROM Admin WHERE username = :username");
-        $stmt->execute(['username' => $username]);
+    // Method untuk otentikasi pengguna
+    public function authenticate($username, $password) {
+        $stmt = $this->pdo->prepare("SELECT * FROM admin WHERE username = :username AND password = :password");
+        $stmt->execute(['username' => $username, 'password' => $password]);
         $user = $stmt->fetch();
 
-        if ($user && password_verify($password, $user['password'])) {
+        if ($user) {
             return $user;
         } else {
             return false;
         }
     }
 }
+
+$database = new Database("localhost", "cloud", "root", "");
+$pdo = $database->getPDO();
+
+$process = new Process($pdo);
+?>
