@@ -63,7 +63,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
         ├── ice02.jpg          : Gambar reviewer 2
         ├── ice2.mp4           : Video about
     ├── /script                : Folder menangani script main
-        ├── dbconfig.php       : File menangani koneksi ke localhost
+        ├── database.php       : File menangani koneksi ke localhost
         ├── index.html         : File utama web Cloud Ice Cream
         ├── script.js          : File menangani pencarian dan perhitungan
         ├── style.css          : File menangani css main
@@ -76,7 +76,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
         ├── cloud.png          : Gambar ikon di title
     ├── /misc                  : Folder menangani sql tabel pesanan
         ├── createdb.sql       : File menangani sql tabel pesanan
-    ├── db.config.php          : File menangani koneksi ke localhost
+    ├── database.php           : File menangani koneksi ke localhost
     ├── form_handler.php       : File menangani method
     ├── pesanan.php            : File utama pesanan
     ├── process.php            : File menangani respon method
@@ -88,7 +88,7 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
         ├── store.png          : Gambar background login.php dan signup.php
         ├── cloud.png          : Gambar ikon di title
     ├── data-query.sql         : File menangani sql tabel user
-    ├── dbconfig.php           : File menangani koneksi ke localhost
+    ├── database.php           : File menangani koneksi ke localhost
     ├── login.php              : File utama login
     ├── login_formhandler.php  : File menangani method
     ├── logout.php             : File utama logout
@@ -103,23 +103,25 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
             ├── style.css          : File menangani css login.php dan signup.php Admin
             ├── cloud.png          : Gambar ikon di title
         ├── data-query.sql         : File menangani sql tabel Admin
-        ├── dbconfig.php           : File menangani koneksi ke localhost
+        ├── database.php           : File menangani koneksi ke localhost
         ├── login.php              : File utama login Admin
         ├── login_formhandler.php  : File menangani method
         ├── logout.php             : File utama logout Admin
         ├── process.php            : File menangani proses login dan logout Admin
         ├── signup.php             : File utama signup Admin
         ├── signup_formhandler.php : File menangani method
+    ├── /userAdmin             : Folder menangani tampilan user
+        ├── user.php           : File menangani utama user (user)
+    ├── /productAdmin          : Folder menangani tampilan product
+        ├── product.php        : File menangani utama product (admin)
+        ├── dl_product.php     : File menangani proses delete dan update product
+    ├── /pesananAdmin          : Folder menangani tampilan pesanan
+        ├── pesanan.php        : File menangani utama pesanan (admin)
+        ├── dl_pesanan.php     : File menangani proses delete pesanan
     ├── /css                   : File menangani proses login dan logout
     ├── /misc                  : File menangani proses login dan logout
-    ├── add_product.php        : File menangani proses penambahan product
     ├── admin.php              : File utama Admin
-    ├── dbconfig.pgp.php       : File menangani koneksi ke localhost
-    ├── dl_pesanan.php         : File menangani proses delete pesanan
-    ├── dl_product.php         : File menangani proses delete dan update product
-    ├── pesanan.php            : File menangani utama pesanan (admin)
-    ├── product.php            : File menangani utama product (admin)
-    ├── user.php               : File menangani utama user (user)
+    ├── database.php           : File menangani koneksi ke localhost
     ├── welcome.php            : File menangani tampilan default
     
 ├── /Designsystem              : Folder menangani proses sistem design
@@ -142,13 +144,35 @@ g) Halaman Admin (Admin Dashboard): Halaman ini tersedia untuk membantu Admin da
     ├── ss12.png               : Gambar pesanan (admin)
 
 
+-- Instruksi Konfigurasi Website --
+- 
+a) Gunakan HTML, CSS, Javascript, PHP (Server-Side Script), dan MySQL untuk manajemen fornt-end, backend, serta penyesuaian database. Selain itu, gunakan pula Visual Studio Code untuk menyunting kode sumber.
+
+b) Persiapan lingkungan pengembangan dan implementasi yang telah disebutkan sebelumnya dan lakukan insialisasi proyek.
+
+c) Implementasi dapat dilakukan berdasarkan struktur direktori yang telah dijelaskan pada bagian "Struktur Folder". Jangan lupa melakukan penyesuaian terhadap database untuk menguji fungsionalitas website.
+
+
+-- Instruksi Penggunaan Website --
+- 
+a) Pengguna dapat mengakses Website Cloud Ice Cream dan melakukan login atau signup. Ikon orang dapat dilihat pada bagian navbar, setelah mengklik tombol tersebut maka pengguna akan diarahkan ke halaman login, pengguna juga dapat mengklik signup jika memang belum melakukan registrasi akun.
+
+b) Pengguna kemudian dapat menuju ke section yang diinginkan melalui navbar ataupun menggulir halaman ke bawah. Pada section Product pengguna dapat mencari harga produk yang diinginkan di label pencarian.
+
+c) Pengguna selanjutnya dapat juga melihat detail produk dengan mengklik View Detail, nantinya pengguna akan diarahkan ke halaman detail produk dan akan ada tombol Buy Now untuk membeli produk terkait.
+
+d) Setelah mengklik Buy Now maka pengguna akan diarahkan ke halaman pesanan, halaman tersebut akan menampilkan informasi pengguna dan produk secara otomatis, pengguna hanya perlu memasukkan Alamat tujuan pengiriman produk. Perlu diperhatikan bahwa sangat penting untuk login sebelum memesan produk agar sistem dapat berjalan dengan baik. Jika tetap ingin memesan sebelum login, maka pengguna akan diarahkan ke halaman login kembali.
+
+e) Pengguna juga memungkinkan untuk melakukan logout yang telah disediakan di navbar.
+
+f) Selain halaman utama untuk pengguna tersebut, Website Cloud Ice Cream juga tersedia Admin Dashboard (disediakan untuk admin Cloud Ice Cream). Untuk menggunakan Admin Dashboard, admin harus melakukan login atau signup terlebih dahulu.
+
+g) Halaman Admin Dashboard akan memungkinkan admin untuk melihat data user, data pesanan (mengahapus pesanan yang telah selesai diurus), dan data produk (mengganti harga, menghapus produk, dan menambah produk).
+
+
 -- Tautan Hidup --
 -
-Tautan Proyek
-Cara Menjalankan Proyek:
-Klik tautan proyek yang telah disediakan.
-Atau buka browser, disarankan menggunakan Chrome atau Microsoft Edge.
-Ketikkan tautan proyek di atas, dan halaman web siap ditampilkan.
+Tautan Proyek: 
 
 
 -- Screenshot Halaman Web Cloud Ice Cream --
@@ -158,3 +182,5 @@ Ketikkan tautan proyek di atas, dan halaman web siap ditampilkan.
 ![Screenshot Latest Products](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss03.png)
 ![Screenshot Review](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss04.png)
 ![Screenshot Footer](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss05.png)
+![Screenshot Footer](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss06.png)
+![Screenshot Footer](https://github.com/nandapramita/uts-webpro/blob/master/Screenshotsystem/ss12.png)
